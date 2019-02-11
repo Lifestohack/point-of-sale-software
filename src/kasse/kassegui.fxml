@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8.0.152" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kasse.GUIEventHandler">
+   <children>
+      <StackPane fx:id="stackPaneStartStop" layoutX="-60.0" layoutY="451.0" prefHeight="54.0" prefWidth="666.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="451.0">
+         <children>
+            <Label fx:id="labelstartstop" prefHeight="17.0" prefWidth="278.0" text="Bitte klicken Sie hier Verkaufsprozess zu starten. →" />
+         </children></StackPane>
+      <JFXButton layoutX="14.0" layoutY="166.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="74.0" layoutY="166.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="135.0" layoutY="166.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="221.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="4" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="74.0" layoutY="221.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="5" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="135.0" layoutY="221.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="6" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="279.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="7" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="74.0" layoutY="279.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="8" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="135.0" layoutY="279.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="9" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="331.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="articleId" layoutX="13.0" layoutY="109.0" prefHeight="39.0" prefWidth="172.0" style="-fx-border-color: grey;" />
+      <ButtonBar layoutX="275.0" layoutY="282.0" prefHeight="40.0" prefWidth="318.0">
+         <buttons>
+            <Label prefHeight="39.0" prefWidth="84.0" text="0.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </buttons>
+      </ButtonBar>
+      <JFXButton layoutX="14.0" layoutY="401.0" onAction="#searchArticle" prefHeight="45.0" prefWidth="172.0" style="-fx-background-color: green;" text="Enter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="197.0" layoutY="401.0" onAction="#addDiscount" prefHeight="45.0" prefWidth="76.0" style="-fx-background-color: blue;" text="30%" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="462.0" layoutY="401.0" onAction="#onDeleteArticle" prefHeight="45.0" prefWidth="84.0" style="-fx-background-color: Red;" text="x" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="190.0" layoutY="7.0" onAction="#onUp" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: orange;" text="↑" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="190.0" layoutY="280.0" onAction="#onDown" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: orange;" text="↓" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="562.0" layoutY="401.0" onAction="#onPay" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: grey;" text="Bezahlen" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="190.0" layoutY="106.0" onAction="#deleteLastNumber" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: grey;" text="←" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="startstop" layoutX="562.0" layoutY="456.0" onAction="#OnStartStop" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: grey;" text="Start" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTreeTableView fx:id="treetablelistview" layoutX="254.0" layoutY="7.0" prefHeight="320.0" prefWidth="404.0" />
+      <Pane layoutX="256.0" layoutY="329.0" prefHeight="45.0" prefWidth="404.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="7.0" text="Saldo:" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="saldo" alignment="CENTER_RIGHT" layoutX="301.0" layoutY="7.0" prefHeight="32.0" prefWidth="60.0" text="0.0" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="74.0" layoutY="331.0" onAction="#processNumpad" prefHeight="45.0" prefWidth="51.0" style="-fx-background-color: grey;" text="." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="364.0" layoutY="401.0" onAction="#addDiscount" prefHeight="45.0" prefWidth="92.0" style="-fx-background-color: blue;" text="\%" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="282.0" layoutY="401.0" onAction="#addDiscount" prefHeight="45.0" prefWidth="76.0" style="-fx-background-color: blue;" text="50%" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <StackPane fx:id="stackPane" layoutX="125.0" layoutY="116.0" prefHeight="451.0" prefWidth="666.0" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

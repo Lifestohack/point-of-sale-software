@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Articles>
+    <Article Articlenumber="1">
+        <Description>Burger Edeka.</Description>
+        <Name>Burger</Name>
+        <Price>2</Price>
+        <Quantity>3</Quantity>
+    </Article>
+    <Article Articlenumber="2">
+        <Description>Pommes Kaufland.</Description>
+        <Name>Pommes</Name>
+        <Price>4</Price>
+        <Quantity>2</Quantity>
+    </Article>
+    <Article Articlenumber="3">
+        <Description>Pizza Rewe.</Description>
+        <Name>Pizza</Name>
+        <Price>4</Price>
+        <Quantity>3</Quantity>
+    </Article>
+</Articles>
